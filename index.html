@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shell Sorting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="logo.png" alt="rnsit" class="logo">
+            <div class="row">
+                <div class="header-title">Code Camp - Sort It Out</div>
+                <div class="header-tagline">The Sorting Challange</div>
+            </div>
+            <img src="mca-logo.png" alt="rnsit-mca" class="logo-mca">
+        </div>
+    </header>
+    <div class="section1">
+        <div class="section1-content">
+            <div class="sorting-name">
+                SHELL SORT
+            </div>
+            <div class="team">
+                <div class="team-header">
+                    Team Members
+                </div>
+                <div class="team-members">
+                    <h3>Yogeesh S</h3>
+                    <!-- <h3>Swamy T S</h3>
+                    <h3>Vijeth Narayan</h3>
+                    <h3>Vishrutha</h3> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="section2-content">
+            <div class="section-heading">
+                Introduction
+            </div>
+            <div class="intrduction-content">
+                <li>Shell sort is mainly a variation of Insertion Sort.</li>
+                <li>In insertion sort, we move elements only one position ahead. </li>
+                <li>When an element has to be moved far ahead, many movements are involved.</li>
+                <li>The idea of ShellSort is to allow the exchange of far items. 
+                <li>In Shell sort, we make the array h-sorted for a large value of h.</li>
+                <li>We keep reducing the value of h until it becomes 1. </li>
+                <li>An array is said to be h-sorted if all sublists of every h’th element are sorted.</li>
+                <br>
+                <h2 style="text-align: center;">Time Complexity</h2>
+                    <h3>Worst Case Complexity</h3>
+                    <p>O(n<sup>2</sup>)</p>
+                    <h3>Best Case Complexity</h3>
+                    <p>Ω(n log(n))</p>
+                    <h3>Average Case Complexity</h3>
+                    <p>θ(n log(n)<sup>2</sup>)</p>
+
+                <h2  style="text-align: center;">Space Complexity</h2>
+                <p> space complexity of the shell sort is O(1).</p>
+            </div>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="section3-content">
+            <div class="section-heading">
+                Representation
+            </div>
+            <div class="representation-content">
+                <div class="left-box">
+                    <h2>The Given Array</h2>
+                    <div class="array">
+                        <div class="element">8</div>
+                        <div class="element">13</div>
+                        <div class="element">40</div>
+                        <div class="element">3</div>
+                        <div class="element">5</div>
+                    </div>
+                    <br>
+                    <h2>Iterating Array</h2>
+                    <div class="array">
+                        <div class="element dummy"></div>
+                        <div class="element dummy"></div>
+                        <div class="element dummy"></div>
+                        <div class="element dummy"></div>
+                        <div class="element dummy"></div>
+                    </div>
+                    <div class="array">
+                        <div class="index"></div>
+                        <div class="index"></div>
+                        <div class="index"></div>
+                        <div class="index"></div>
+                        <div class="index"></div>
+                    </div>
+                    <br>
+                    <h2>Sorted Array</h2>
+                    <div class="array">
+                        <div class="element out"></div>
+                        <div class="element out"></div>
+                        <div class="element out"></div>
+                        <div class="element out"></div>
+                        <div class="element out"></div>
+                    </div>
+                </div>
+                <div class="right-box">
+                    <div class="row">
+                        <div class="col-row">
+                            <h2>Length of Array (n)</h2>
+                            <div class="store-box"></div>
+                        </div>
+                        <div class="col-row">
+                            <h2>gap = (n/2)</h2>
+                            <div class="store-box"></div>
+                        </div>
+                        <div class="col-row">
+                            <h2>temp</h2>
+                            <div class="store-box"></div>
+                        </div>
+                        <div class="col-row">
+                            <h2>j</h2>
+                            <div class="store-box"></div>
+                        </div>
+                        <div class="col-row">
+                            <h2>i</h2>
+                            <div class="store-box"></div>
+                        </div>
+                        <div class="col-row">
+                            <h2>arr[j-gap]</h2>
+                            <div class="store-box"></div>
+                        </div>
+                        <div class="col-row">
+                            <button class="btn-action start">Run</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section4">
+        <div class="section5-content">
+            <div class="section-heading">
+                Representation
+            </div>
+           <img src="Slide1.png" alt="slide1" width="100%">
+        </div>
+    </div>
+    <div class="section5">
+        <div class="section5-content">
+            <div class="section-heading">
+                Representation
+            </div>
+           <img src="Slide2.png" alt="slide1" width="100%">
+        </div>
+    </div>
+    <div class="section6">
+        <div class="section5-content">
+            <div class="section-heading">
+                Algorithm
+            </div>
+            <div class="intrduction-content">
+                Step 1 : Start<br>
+                Step 2 : Initialize the value of gap size. Example: h<br>
+                Step 3 : Divide the list into smaller sub-part. Each must have equal intervals to h<br>
+                Step 4 : Sort these sub-lists using insertion sort<br>
+                Step 5 : Repeat this step 2 until the list is sorted.<br>
+                Step 6 : Print a sorted list.<br>
+                Step 7 : Stop.<br>
+            </div>
+        </div>
+    </div>
+    <div class="section7">
+        <div class="section5-content">
+            <div class="section-heading">
+                Code
+            </div>
+            <div class="section7-content">
+                <textarea name="code" disabled>
+#include  <iostream> 
+using namespace std; 
+    
+int shellSort(int arr[], int n) 
+{ 
+    for (int gap = n/2; gap > 0; gap /= 2) 
+    { 
+        for (int i = gap; i < n; i += 1) 
+        { 
+            int temp = arr[i]; 
+            int j;             
+            for (j = i; j >= gap && arr[j - gap] > temp; j -= gap) 
+                arr[j] = arr[j - gap]; 
+            arr[j] = temp; 
+        } 
+    } 
+    return 0; 
+} 
+    
+void printArray(int arr[], int n) 
+{ 
+    for (int i=0; i<n; i++) 
+        cout << arr[i] << " "; 
+} 
+    
+int main() 
+{ 
+    int arr[] = {12, 34, 54, 2, 3}, i; 
+    int n = sizeof(arr)/sizeof(arr[0]); 
+    cout << "Array before sorting: \n"; 
+    printArray(arr, n); 
+    shellSort(arr, n); 
+    cout << "\nArray after sorting: \n"; 
+    printArray(arr, n); 
+    return 0; 
+} 
+</textarea>
+            </div>
+        </div>
+    </div>
+    <div class="section8">
+        <div class="section8-content">
+            Thank You
+        </div>
+    </div>
+    <button class="nav prev"><img src="icons/prev.png" alt="prev" class="navico"></button>
+    <button class="nav next"><img src="icons/next.png" alt="next" class="navico"></button>
+    <script src="script.js"></script>
+</body>
+</html>
